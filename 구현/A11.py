@@ -63,7 +63,7 @@ def simulate():
         x, y = nx, ny # 다음 위치로 머리를 이동
         time += 1
 
-        if index < 1 and time == info[index][0]: # 회전할 시간인 경우 회전
+        if index < l and time == info[index][0]: # 회전할 시간인 경우 회전
             direction = turn(direction, info[index][1])
             index += 1
 
