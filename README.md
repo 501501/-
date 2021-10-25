@@ -1,7 +1,7 @@
 # codingTest
 이것이 취업을 위한 코딩테스트다 with 파이썬
 
-### chapter 03 그리디
+### [chapter 03 그리디](https://github.com/501501/codingTest/tree/master/%EA%B7%B8%EB%A6%AC%EB%94%94)
 : 당장 좋은 것만 선택하는 그리디
 ### chapter 04 구현
 : 아이디어를 코드로 바꾸는 구현
