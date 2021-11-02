@@ -3,48 +3,6 @@
 # x, y: 교차점의 좌표    a: 구조물의 종류 (0: 기둥, 1: 보)     b: 구조물 설치/삭제 (0: 삭제, 1: 설치)
 # answer: 가로가 3인 2차원 배열 [x, y, a] 형식
 
-build_frame1 = [[1, 0, 0, 1],
-                [1, 1, 1, 1],
-                [2, 1, 0, 1],
-                [2, 2, 1, 1],
-                [5, 0, 0, 1],
-                [5, 1, 0, 1],
-                [4, 2, 1, 1],
-                [2, 1, 1, 1]]
-
-
-#
-#
-# def solution(n, build_frame):
-#     ar = [[0 for i in range(2 * n)] for j in range(2 * n)]
-#
-#     for i in range(len(build_frame)):
-#         # x좌표, y좌표
-#         x = build_frame[i][0]
-#         y = build_frame[i][1]
-#
-#         if x != 0 and y != 0:
-#
-#             # 기둥인 경우
-#             if build_frame[i][2] == 0:
-#                 ar[2 * x - 1][2 * y - 1] = 1
-#                 ar[2 * x - 1][2 * y] = 1
-#
-#             # 보인 경우
-#             else:
-#                 ar[2 * x - 1][2 * y - 1] = 1
-#                 ar[2 * x][2 * y - 1] = 1
-#
-#     # ar 확인용
-#     for i in range(2 * n):
-#         print(ar[i])
-#
-#     answer = [[]]
-#     return answer
-#
-#
-# solution(5, build_frame1)
-
 # 가능한 구조물인지 체크
 def possible(answer):
     for x, y, stuff in answer:
