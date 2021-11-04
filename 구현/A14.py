@@ -28,5 +28,3 @@ def solution(n, weak, dist):
             return -1
     return answer
 
-
-print(solution(200, [0, 100], [1, 1]))
